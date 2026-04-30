@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
 
 :root {
-  --cor-de-fundo:#960af3;
+  --cor-de-fundo: #960af3;
   --verde: #0FFCBE;
   --branco: #ffffff;
-  --botao-ativo: (#7707c2);
-  --botao-inativo: (#960af3);
-  --texto-fundo:(#960af3);
+  --botao-ativo: #7707c2;
+  --botao-inativo: #960af3;
+  --texto-fundo: #960af3;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
 }
 
 .botao {
-  font-family: "Crakra Petch", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   background-color: var(--botao-inativo);
   color: var(--branco);
   display: flex;
@@ -52,30 +52,29 @@ body {
 }
 
 .botao.ativo {
-  background-color: var(--botao-inativo);
+  background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde);
 }
 
-.abas-textos {
-  background-color: var(--texto-fundo);
-  padding: 40px;
-  border-radius: 0 0 40px 40px;
-}
-.aba-conteudo.ativo {
-  display: block;
-}
 .aba-conteudo {
   display: none;
 }
+
+.aba-conteudo.ativo {
+  display: block;
+}
+
 .aba-conteudo-titulo-principal {
   font-size: 28px;
   text-align: center;
 }
+
 .aba-conteudo-titulo-secundario {
   text-align: center;
   color: var(--verde);
   text-transform: uppercase;
 }
+
 .contador {
   display: flex;
   justify-content: center;
@@ -107,16 +106,10 @@ body {
   display: block;
 }
 
-
-
 @media screen and (min-width: 768px) {
-    .botoes {
+  .botoes {
     display: flex;
   }
-}
-
-@media screen and (min-width: 768px) {
-  /* Código omitido */
 
   .botao:last-child {
     border-radius: 0 40px 0 0;
